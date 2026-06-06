@@ -7,7 +7,7 @@ API REST desarrollada con Spring Boot para la gestión de una biblioteca. Proyec
 | Persona | Responsabilidad |
 |--------|----------------|
 | **Indalecio Navarro** | Entidad `Libro`, arquitectura completa, CRUD Libros, búsqueda con params, manejo de excepciones, README |
-| **[Nombre Compañero]** | Entidad `Autor`, CRUD Autores, búsqueda de autores, documento de diseño |
+| **Dayron Abella Cabrera** | Entidad `Autor`, CRUD Autores, búsqueda de autores, documento de diseño |
 
 ---
 
@@ -75,7 +75,7 @@ Accesible en: [http://localhost:8080/h2-console](http://localhost:8080/h2-consol
 | PUT | `/api/v1/autores/{id}` | Actualizar autor | 200 OK / 404 |
 | DELETE | `/api/v1/autores/{id}` | Eliminar autor | 204 No Content / 404 |
 | GET | `/api/v1/autores/buscar?nombre=xxx` | Buscar por nombre | 200 OK |
-
+| GET | `/api/v1/autores/buscar?nacionalidad=yyy` | Buscar por nacionalidad | 200 OK |
 ---
 
 ## 🧪 Ejemplos con curl
