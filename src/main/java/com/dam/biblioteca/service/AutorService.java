@@ -55,6 +55,6 @@ public class AutorService {
     }
 
     public List<Autor> findByNacionalidad(String nacionalidad) {
-        return autorRepository.findByNacionalidad(nacionalidad);
+        return autorRepository.findByNacionalidadContainingIgnoreCase(nacionalidad);
     }
 }

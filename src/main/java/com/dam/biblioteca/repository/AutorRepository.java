@@ -22,5 +22,5 @@ public interface AutorRepository extends JpaRepository<Autor, Long> {
     /**
      * Búsqueda por nacionalidad.
      */
-    List<Autor> findByNacionalidad(String nacionalidad);
+    List<Autor> findByNacionalidadContainingIgnoreCase(String nacionalidad);
 }

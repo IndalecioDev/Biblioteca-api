@@ -67,4 +67,19 @@ public class AutorController {
 
     // TODO (Persona 2) — Módulo B: añadir endpoint GET /api/v1/autores/buscar
     // con @RequestParam nombre y nacionalidad opcionales
+    @GetMapping("/buscar")
+    public ResponseEntity<List<Autor>> buscar(
+        @RequestParam(required = false) String nombre,
+        @RequestParam(required = false) String nacionalidad) {
+
+        if (nombre != null && !nombre.isBlank()) {
+            return ResponseEntity.ok(autorService.findByNombre(nombre));
+        }
+
+        if (nacionalidad != null && !nacionalidad.isBlank()) {
+            return ResponseEntity.ok(autorService.findByNacionalidad(nacionalidad));
+        }
+
+        return ResponseEntity.ok(autorService.findAll());
+    }
 }
