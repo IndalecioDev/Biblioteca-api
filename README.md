@@ -75,7 +75,7 @@ Accesible en: [http://localhost:8080/h2-console](http://localhost:8080/h2-consol
 | PUT | `/api/v1/autores/{id}` | Actualizar autor | 200 OK / 404 |
 | DELETE | `/api/v1/autores/{id}` | Eliminar autor | 204 No Content / 404 |
 | GET | `/api/v1/autores/buscar?nombre=xxx` | Buscar por nombre | 200 OK |
-
+| GET | `/api/v1/autores/buscar?nacionalidad=yyy` | Buscar por nombre y/o nacionalidad | 200 OK |
 ---
 
 ## 🧪 Ejemplos con curl
